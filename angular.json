@@ -29,12 +29,12 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -93,15 +93,18 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
-            ],
-            "scripts": []
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "574d7b1a-28c0-4a1e-bea1-ce0df4d09b2b"
   }
 }
