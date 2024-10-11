@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProjectsComponent } from '../projects/projects.component';
 import { AboutComponent } from '../about/about.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,7 @@ import { AboutComponent } from '../about/about.component';
   imports: [
     ProjectsComponent,
     AboutComponent,
+    RouterModule
     
   ],
   templateUrl: './home.component.html',

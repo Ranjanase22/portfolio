@@ -10,7 +10,7 @@ export const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'work', component: WorkComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect to home by default
+  { path: '**', redirectTo: '/home', pathMatch: 'full' }, // Redirect to home by default
 ];
 
 @NgModule({
