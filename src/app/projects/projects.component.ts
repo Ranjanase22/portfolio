@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ContactComponent } from '../contact/contact.component';
 
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ContactComponent],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
@@ -40,4 +41,6 @@ export class ProjectsComponent {
       codeUrl: 'https://github.com/Ranjanase22/todo-list',
     },
   ];
+
+  
 }

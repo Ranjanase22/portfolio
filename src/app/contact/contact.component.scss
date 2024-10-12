@@ -1,0 +1,116 @@
+@keyframes zoom-out {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.9);
+      opacity: 0.8;
+    }
+  }
+  
+  @keyframes zoom-in {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .contact-heading {
+    font-size: 32px;
+    color: #e3e6eb;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+    animation: zoom-in 0.5s ease forwards;
+  }
+  
+  .contact-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 5px;
+    background-color: #f59e0b;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-heading:hover::after {
+    transform: scaleX(1);
+  }
+  
+  
+  .contact-description {
+    text-align: center;
+    animation: zoom-in 0.5s ease forwards;
+  }
+  
+  
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .contact-icon {
+    font-size: 50px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-icon.fa-envelope {
+    color: #6e6362; /* Gmail red */
+  }
+  
+  
+  .contact-icon.fa-instagram {
+    color: #b33b5d; /* Instagram gradient red-pink */
+  }
+  
+  .contact-icon.fa-linkedin {
+    color: #0077b5; /* LinkedIn blue */
+  }
+  
+  .contact-icon.fa-github {
+    color: #5a5656; /* GitHub black */
+  }
+  
+  /* Hover Effects */
+  .contact-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .contact-icon.fa-envelope:hover {
+    color: #998d8d; /* Darker shade on hover */
+  }
+  
+  /* Hover color for Instagram */
+  .contact-icon.fa-instagram:hover {
+    color: #ee0c8c; /* Darker Instagram pink */
+  }
+  
+  /* Hover color for LinkedIn */
+  .contact-icon.fa-linkedin:hover {
+    color: #09a1f2; /* Darker LinkedIn blue */
+  }
+  
+  /* Hover color for GitHub */
+  .contact-icon.fa-github:hover {
+    color: #8d8585; /* Slightly lighter GitHub black */
+  }
+  

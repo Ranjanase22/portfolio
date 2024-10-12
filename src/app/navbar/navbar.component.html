@@ -1,12 +1,28 @@
 <div class="navbar">
   <div class="navbar-container">
     <div class="navbar-brand">Ranjana B K</div>
-    
+
     <div class="navbar-links">
-      <a routerLink="/home">Home</a>
-      <a routerLink="/about">About</a>
-      <a routerLink="/work">Work Experience</a>
-      <a routerLink="/projects">Projects</a>
+      <a routerLink="/home">
+        <fa-icon [icon]="faHome"></fa-icon>
+        Home
+      </a>
+      <a routerLink="/about">
+        <fa-icon [icon]="faUser"></fa-icon>
+        About
+      </a>
+      <a routerLink="/work">
+        <fa-icon [icon]="faBriefcase"></fa-icon>
+        Work Experience
+      </a>
+      <a routerLink="/projects">
+        <fa-icon [icon]="faFileAlt"></fa-icon>
+        Projects
+      </a>
+      <a routerLink="/contact">
+        <fa-icon [icon]="faEnvelope"></fa-icon>
+        Contact Me
+      </a>
     </div>
   </div>
 </div>
