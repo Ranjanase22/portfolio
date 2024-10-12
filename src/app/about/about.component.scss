@@ -70,6 +70,7 @@
   max-width: 300px; /* Max width for the photo */
   overflow: hidden; /* Prevent overflow */
   padding: 32px;
+  border-left: 3px solid #f59e0b;
 }
 
 .about-photo img {
@@ -92,10 +93,30 @@
 
 .about-paragraph {
   font-size: 24px; /* Font size */
-  color: #64748b; /* Text color */
+  color: #bbbec2; /* Text color */
   margin-top: 0; /* Adjust margin */
   line-height: 1.6; /* Line height for readability */
   padding: 32px;
   width: 500px;
 }
 
+
+.skillset {
+  margin-left: 25px;
+}
+
+
+.skillset > strong {
+  color: #f59e0b; 
+  font-size: 1rem; 
+}
+
+.skillset ul {
+  list-style-type: none; 
+}
+
+.skillset li {
+  color: #bcc1c8; /* Color for list items */
+  line-height: 1.6; /* Line height for readability */
+  margin: 5px 0; /* Space between list items */
+}
